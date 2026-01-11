@@ -5,8 +5,9 @@ import devServer, { defaultOptions } from "@hono/vite-dev-server";
 import tailwindcss from "@tailwindcss/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import viteReact from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
+import { withFilter, defineConfig } from 'vite'
 import { analyzer } from "vite-bundle-analyzer";
+import svgr from 'vite-plugin-svgr'
 import "dotenv/config";
 
 const port = process.env.NODE_SERVER_PORT
@@ -48,6 +49,14 @@ const clientBuild = {
 export default defineConfig(({ mode }) => {
 	return {
 		plugins: [
+			withFilter(
+				svgr({
+					svgrOptions: {
+						
+					}
+				}),
+				{ load: { id: /\.svg\?react$/ } },
+			),
 			tanstackRouter({ autoCodeSplitting: true }),
 			viteReact({
 				babel: {
