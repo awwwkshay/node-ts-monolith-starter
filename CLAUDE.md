@@ -7,15 +7,12 @@ This project is a full-stack React SSR application using TanStack Router and Hon
 - `npm run build`: Build client and server for production
 - `npm run start`: Start production server
 - `npm run check`: Run lint and format checks
-- `npm run format`: Format code with Prettier
-- `npm run lint`: Lint code with ESLint
 - `npm test`: Run tests with Vitest
 
 ## Technical Details
 - **Routing**: File-based via `src/routes/`. TanStack Router plugin auto-generates `src/routeTree.gen.ts`.
 - **SSR**: Handled in `src/entry-server.tsx` using Hono.
 - **Styling**: Tailwind CSS v4.
-- **Linting/Formatting**: ESLint and Prettier.
 
 ## AI Assistant Tips
 - Never edit `src/routeTree.gen.ts` directly.

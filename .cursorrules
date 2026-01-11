@@ -9,8 +9,6 @@ You are working on a full-stack React SSR application with TanStack Router and H
 - **Build**: Vite 7
 - **Styling**: Tailwind CSS v4
 - **Testing**: Vitest + Testing Library
-- **Linting**: ESLint
-- **Formatting**: Prettier
 
 ## Code Style
 
@@ -154,12 +152,6 @@ export const Route = createFileRoute('/path')({
 - Use `.env.example` for environment variable templates
 - Sanitize user input
 - Use CORS middleware (already configured)
-
-## ESLint & Prettier Configuration
-
-- ESLint handles linting via `eslint.config.js`
-- Prettier handles formatting via `.prettierrc`
-- Run fixes with `npm run format` or `npm run lint -- --fix`
 
 ## SSR Considerations
 

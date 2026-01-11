@@ -7,5 +7,4 @@
 	"tailwind": true,
 	"git": true,
 	"mode": "file-router",
-	"chosenAddOns": ["eslint", "prettier"]
 }

@@ -36,17 +36,6 @@ npm test              # Run tests once
 npm run test:watch    # Run tests in watch mode (if configured)
 ```
 
-### Linting and Formatting
-
-This project uses **Biome** for linting and formatting (not ESLint/Prettier).
-
-```bash
-npm run check         # Check for lint and format issues
-npm run check -- --write  # Auto-fix issues
-npm run lint          # Lint only
-npm run format        # Format only
-```
-
 ### Type Checking
 
 ```bash

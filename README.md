@@ -56,7 +56,6 @@ Open [http://localhost:3000](http://localhost:3000) to see your app running!
 - **🔥 Vite**: Lightning-fast development with Hot Module Replacement
 - **📘 TypeScript**: Full type safety across client and server
 - **🎨 Tailwind CSS v4**: Modern utility-first CSS framework
-- **🧹 ESLint & Prettier**: Industry standard linting and formatting for code quality
 - **🧪 Vitest**: Fast unit testing with great DX
 
 ## 📁 Architecture
