@@ -66,8 +66,8 @@ function AboutPage() {
 						className="text-sm md:text-base text-[var(--color-ash)] mb-8 animate-fade-up opacity-0"
 						style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
 					>
-						A carefully curated stack for building modern, type-safe full-stack applications with
-						server-side rendering.
+						A carefully curated stack for building modern, type-safe full-stack
+						applications with server-side rendering.
 					</p>
 
 					<div className="space-y-3 mb-8">
@@ -96,7 +96,9 @@ function AboutPage() {
 										>
 											{tech.name}
 										</h3>
-										<p className="text-xs text-[var(--color-ash)]">{tech.description}</p>
+										<p className="text-xs text-[var(--color-ash)]">
+											{tech.description}
+										</p>
 									</div>
 								</div>
 							</div>

@@ -1,4 +1,5 @@
 import type React from "react";
+
 import logo from "../logo.svg";
 
 interface HeroLink {
@@ -12,7 +13,11 @@ interface HeroSectionProps {
 	links: HeroLink[];
 }
 
-export default function HeroSection({ title, description, links }: HeroSectionProps) {
+export default function HeroSection({
+	title,
+	description,
+	links,
+}: HeroSectionProps) {
 	return (
 		<div className="text-center">
 			<header className="min-h-screen flex flex-col items-center justify-center bg-[#282c34] text-white text-[calc(10px+2vmin)]">
@@ -22,7 +27,9 @@ export default function HeroSection({ title, description, links }: HeroSectionPr
 					alt="logo"
 				/>
 				<h1 className="text-4xl font-bold mb-6">{title}</h1>
-				<p className="max-w-2xl mx-auto mb-8 text-lg leading-relaxed">{description}</p>
+				<p className="max-w-2xl mx-auto mb-8 text-lg leading-relaxed">
+					{description}
+				</p>
 				<div className="flex gap-6 flex-wrap justify-center">
 					{links.map((link) => (
 						<a

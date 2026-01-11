@@ -6,5 +6,5 @@
 	"typescript": true,
 	"tailwind": true,
 	"git": true,
-	"mode": "file-router",
+	"mode": "file-router"
 }

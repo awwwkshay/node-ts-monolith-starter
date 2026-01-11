@@ -1,5 +1,11 @@
-import { createRootRouteWithContext, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
+import {
+	createRootRouteWithContext,
+	HeadContent,
+	Outlet,
+	Scripts,
+} from "@tanstack/react-router";
 import React, { Suspense } from "react";
+
 import Header from "../components/Header";
 import appCss from "../styles.css?url";
 import type { RouterContext } from "../types/router";
@@ -9,7 +15,7 @@ const TanStackRouterDevtools = import.meta.env.PROD
 	: React.lazy(() =>
 			import("@tanstack/react-router-devtools").then((res) => ({
 				default: res.TanStackRouterDevtools,
-			}))
+			})),
 		);
 
 export const Route = createRootRouteWithContext<RouterContext>()({
@@ -49,7 +55,9 @@ export const Route = createRootRouteWithContext<RouterContext>()({
 				: []),
 			{
 				type: "module",
-				src: import.meta.env.PROD ? "/static/entry-client.js" : "/src/entry-client.tsx",
+				src: import.meta.env.PROD
+					? "/static/entry-client.js"
+					: "/src/entry-client.tsx",
 			},
 		],
 	}),
@@ -84,7 +92,10 @@ export const Route = createRootRouteWithContext<RouterContext>()({
 							</h1>
 						</div>
 
-						<div className="space-y-6 animate-fade-up" style={{ animationFillMode: "forwards" }}>
+						<div
+							className="space-y-6 animate-fade-up"
+							style={{ animationFillMode: "forwards" }}
+						>
 							<h2 className="text-2xl md:text-3xl font-semibold text-[var(--color-bone)]">
 								Something went wrong
 							</h2>

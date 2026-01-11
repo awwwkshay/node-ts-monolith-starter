@@ -17,7 +17,7 @@ const routes = new Hono()
 			"json",
 			z.object({
 				message: z.string().min(1),
-			})
+			}),
 		),
 		(c) => {
 			const { message } = c.req.valid("json");
@@ -25,7 +25,7 @@ const routes = new Hono()
 				echo: message,
 				receivedAt: new Date().toISOString(),
 			});
-		}
+		},
 	);
 
 export type ApiRoutes = typeof routes;

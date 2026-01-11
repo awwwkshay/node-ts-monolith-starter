@@ -81,8 +81,8 @@ function App() {
 							animationFillMode: "forwards",
 						}}
 					>
-						Type-safe file-based routing with lightning-fast server-side rendering. Build
-						production-ready full-stack apps.
+						Type-safe file-based routing with lightning-fast server-side
+						rendering. Build production-ready full-stack apps.
 					</p>
 
 					{/* Buttons */}

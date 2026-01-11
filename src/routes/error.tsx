@@ -46,7 +46,9 @@ function LoadingComponent() {
 		<PageWrapper>
 			<div className="text-center">
 				<div className="w-12 h-12 border-2 border-[var(--color-cyan)]/30 border-t-[var(--color-cyan)] rounded-full animate-spin mx-auto mb-4" />
-				<p className="text-sm font-mono text-[var(--color-ash)]">Rolling the dice...</p>
+				<p className="text-sm font-mono text-[var(--color-ash)]">
+					Rolling the dice...
+				</p>
 			</div>
 		</PageWrapper>
 	);
@@ -73,11 +75,14 @@ function ErrorDisplay({ error }: { error: Error }) {
 				</h1>
 
 				<div className="p-4 bg-[var(--color-charcoal)]/50 border border-[var(--color-coral)]/30 rounded-lg mb-6">
-					<code className="text-sm font-mono text-[var(--color-coral)]">{error.message}</code>
+					<code className="text-sm font-mono text-[var(--color-coral)]">
+						{error.message}
+					</code>
 				</div>
 
 				<p className="text-sm text-[var(--color-ash)] mb-6">
-					This page has a <span className="text-[var(--color-amber)] font-semibold">50%</span>{" "}
+					This page has a{" "}
+					<span className="text-[var(--color-amber)] font-semibold">50%</span>{" "}
 					chance of throwing an error.
 					<br />
 					Refresh to try your luck again.
@@ -138,7 +143,12 @@ function SuccessComponent() {
 						viewBox="0 0 24 24"
 						aria-hidden="true"
 					>
-						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+						<path
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							strokeWidth={2}
+							d="M5 13l4 4L19 7"
+						/>
 					</svg>
 				</div>
 
@@ -149,7 +159,10 @@ function SuccessComponent() {
 				<p className="text-sm text-[var(--color-ash)] mb-6">
 					The loader didn&apos;t throw an error this time.
 					<br />
-					This page has a <span className="text-[var(--color-amber)] font-semibold">50%</span>{" "}
+					This page has a{" "}
+					<span className="text-[var(--color-amber)] font-semibold">
+						50%
+					</span>{" "}
 					chance of failing.
 				</p>
 
